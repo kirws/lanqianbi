@@ -1,0 +1,154 @@
+.contaier {
+    user-select: none;
+    background-color: #BCB09E;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+}
+
+body {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: #CCC1B2;
+}
+
+.numDiv {
+    line-height: 100px;
+    text-align: center;
+    font-weight: 700;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    font-size: 40px;
+    font-family: "微软雅黑";
+    transition: .5s background-color, color .5s;
+    color: white;
+    z-index: 2;
+}
+
+.contaier .n2 {
+    background-color: #EFE5DA;
+    color: #786E64;
+}
+
+.contaier .n4 {
+    background-color: #ECE0C9;
+    color: #786E64;
+}
+
+.contaier .n8 {
+    background-color: #F1B179;
+    color: white;
+}
+
+.contaier .n16 {
+    background-color: #F69564;
+    color: white;
+}
+
+.contaier .n32 {
+    background-color: #F57D5F;
+    color: white;
+
+
+}
+
+.contaier .n64 {
+    background-color: #F55E3A;
+    color: white;
+
+
+}
+
+.contaier .n128 {
+    background-color: #EDCF70;
+    color: white;
+
+
+}
+
+.contaier .n256 {
+    background-color: #EDCC61;
+    color: white;
+
+
+}
+
+.contaier .n512 {
+    background-color: #EDC750;
+    color: white;
+
+
+}
+
+.contaier .n1024 {
+    background-color: #ECC53E;
+    color: white;
+
+
+}
+
+.contaier .n2048 {
+    background-color: #EEC22E;
+    color: white;
+
+}
+
+.mask {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, .5);
+    z-index: 9;
+    display: none;
+    opacity: 0;
+}
+
+.gameover {
+    position: absolute;
+    top: -100%;
+    display: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 10;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.gameover .text {
+    color: rgb(248, 63, 63);
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.gameover .ok,
+.gameover .reStart {
+    background-color: #3aa1f5;
+    width: 100px;
+    line-height: 35px;
+    height: 35px;
+    margin: 25px auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.victory {
+    display: none;
+}
